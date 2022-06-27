@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %}sangni的博客{% endblock %} </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/bootstrap.min.css">
+    <script src="../static/jquery-3.2.1.min.js"></script>
+    <script src="../static/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/main.css">
+    <link rel="shortcut icon" href="../../media/icon.jpg">
+    {% block script %}
+
+    {% endblock %}
+</head>
+<body>
+{%csrf_token%}
+<!-- 导航栏 -->
+<div>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index/">Sangni_IO</a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/index/">首页</a></li>
+                    <li><a href="/archive/">归档</a></li>
+                    <li><a href="/article/2">留言板</a></li>
+                    <li class="item-search">
+                        <form action="{% url 'search' %}" class="search-form" method="get">
+                            {% csrf_token %}
+                            <div class="fgroup">
+                                <input class="search" type="search" placeholder="What are you looking for?" name="q">
+<!--                                <i class="fa fa-search"></i>-->
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- banner-->
+<div class="banner_container">
+    <span class="banner_title">Hi,sangni</span>
+    <span class="banner_title1">「story never end」</span>
+</div>
+<!-- 内容 -->
+<div id="main">
+    {% block content %}
+
+    {% endblock %}
+    <!--侧边栏-->
+    <div id="rightbar" class="fixed-top">
+        <div class="my-info">
+        <div id="avatar"><img  class='img' src="/media/{{avatar}}" alt=""></div>
+        <div class="name"><a>sangni_IO</a></div>
+        <div>
+            <nav class="site-state">
+                <div class="site-state-item site-state-posts">
+                    <a style="cursor: default;">
+                        <span class="site-state-item-count">{{blog_nums}}</span>
+                        <span class="site-state-item-name">文章</span>
+                    </a>
+                </div>
+                <div class="site-state-item site-state-categories">
+                    <a data-toggle="modal" data-target="#blog_categories">
+                        <span class="site-state-item-count">{{cate_nums}}</span>
+                        <span class="site-state-item-name">分类</span>
+                    </a>
+                </div>
+                <div class="site-state-item site-state-tags">
+                    <a data-toggle="modal" data-target="#blog_tags">
+                        <span class="site-state-item-count">{{tag_nums}}</span>
+                        <span class="site-state-item-name">标签</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="links-of-author motion-element">
+                <span class="links-of-author-item scaleup">
+                    <a href="https://github.com/sangni3" target="_blank" title="github">
+                        <i class="fa fa-github">
+                            <span>github</span>
+                        </i>
+                    </a>
+                </span>
+            <span class="links-of-author-item scaleup">
+                    <a href="https://space.bilibili.com/7867047" target="_blank" title="bilibili">
+                        <i style="fill:#20b0e3;">
+                            <svg t="1581180571735" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1122">
+                            <path d="M813.2864 234.5216h-53.0176l46.3872-46.3872c19.8912-19.8912 19.8912-59.648 0-79.5136s-59.648-19.8912-79.5136 0l-132.5312 125.9008h-159.0272l-132.5312-125.9008c-19.8912-19.8912-59.648-19.8912-79.5136 0s-19.8912 59.648 0 79.5136l46.3872 46.3872H216.9088c-92.7744 0-165.6576 72.8832-165.6576 165.6576v357.8112c0 99.4048 72.8832 172.288 165.6576 172.288h589.7216c92.7744 0 165.6576-72.8832 165.6576-165.6576V400.1792c6.6304-92.7744-66.2528-165.6576-159.0272-165.6576z m46.3872 523.4688a59.392 59.392 0 0 1-59.648 59.648H223.5392a59.392 59.392 0 0 1-59.648-59.648V406.8096a59.392 59.392 0 0 1 59.648-59.648h576.4864a59.392 59.392 0 0 1 59.648 59.648v351.1808z m-516.864-291.5328a59.392 59.392 0 0 0-59.648 59.648v59.648c0 33.1264 26.496 59.648 59.648 59.648s59.648-26.496 59.648-59.648v-59.648a59.392 59.392 0 0 0-59.648-59.648z m344.576 0a59.392 59.392 0 0 0-59.648 59.648v59.648c0 33.1264 26.496 59.648 59.648 59.648s59.648-26.496 59.648-59.648v-59.648a59.392 59.392 0 0 0-59.648-59.648z" p-id="1123"></path></svg>
+                            <span>bilibili</span>
+                        </i>
+                    </a>
+                </span>
+            <span class="links-of-author-item scaleup">
+                    <a href="mailto:dujuntaolove@outlook.com" target="_blank" title="email">
+                        <i class="fa fa-envelope-o">
+                            <span>email</span>
+                        </i>
+                    </a>
+                </span>
+        </div>
+        </div>
+        <div class="categorys">
+            <h3>栏目分类</h3>
+            <ul>
+                {% for category in all_category %}
+                <li >
+                    <a href="/type/{{category.id}}">{{category.name}}
+                        <span>{{category.number}}</span>
+                    </a>
+
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 底部 -->
+<div class="fixed-btn" style="cursor:pointer">
+    <a class="go-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+<script>
+    $('.fixed-btn').click(function () {
+        document.querySelector('.navbar').scrollIntoView({
+            behavior: "smooth", // 定义动画过渡效果， "auto"或 "smooth" 之一。默认为 "auto"
+            block: "center", // 定义垂直方向的对齐， "start", "center", "end", 或 "nearest"之一。默认为 "start"
+            inline: "nearest" // 定义水平方向的对齐， "start", "center", "end", 或 "nearest"之一。默认为 "nearest"
+        })
+    })
+
+</script>
+
+<!-- 可动背景 -->
+<script id="ribbon" src="../static/canvas-ribbon.js"></script>
+
+
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="copyright pull-left">
+            <a href="/" title="KenZhang">sangni</a> 版权所有 |
+            <a href="https://www.djangoproject.com/" title="Django" target="_blank">基于Django构建</a>© 2021丨托管于
+            <a rel="nofollow" target="_blank" href="https://www.aliyun.com/" title="阿里云主机">阿里云主机</a> &amp;
+            <a href="/sitemap.xml" title="Sitemap" target="_blank">网站地图</a>
+            <div style="text-align: center;">
+                <a rel="nofollow" target="_blank" href="https://beian.miit.gov.cn/">浙ICP备2021038942号-1</a>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+    <div id="my-aplayer"
+
+         class="aplayer"
+
+         data-id="7236267143"
+
+         data-server="netease"
+
+         data-type="playlist"
+
+         data-fixed="true"
+
+         data-autoplay="false"
+
+         data-order="list"
+
+         data-volume="0.55"
+
+         data-theme="#cc543a"
+
+         data-preload="auto"
+
+    ></div>
+</footer>
+</body>
+<script>
+    $(function(){
+
+        setTimeout(function () {
+            var cl=true
+            $('.aplayer-miniswitcher').click(
+                function (){
+                    if (cl){
+                        $(".aplayer-body").unbind();
+                        cl=false
+                    }
+                    else {
+                        cl=true
+                        $('.aplayer-body').css({left:'-66px'})
+                        $('.aplayer-body').mouseover(
+                            function(){$('.aplayer-body').css({left:'0'})}
+                        );
+                        $('.aplayer-body').mouseout(
+                            function(){$('.aplayer-body').css({left:'-66px'})}
+                        );
+                    }
+                }
+            )
+
+            $('.aplayer-body').css({left:'-66px'})
+            $('.aplayer-body').mouseover(
+                function(){$('.aplayer-body').css({left:'0'})}
+            );
+            $('.aplayer-body').mouseout(
+                function(){$('.aplayer-body').css({left:'-66px'})}
+            );
+
+        }, 2000);
+        $(window).scroll( function() {
+            var winScrollHeight = $(window).scrollTop(); // 获取滚动条滚动的距离(移动距离)
+            if (winScrollHeight> 50){
+                $('.fixed-btn').css('display','inline-block')
+            }
+            else {
+                $('.fixed-btn').css('display','none')
+            }
+        })
+
+    })
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../static/bootstrap.min.css">
+    <script src="../static/jquery-3.2.1.min.js"></script>
+    <script src="../static/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="containter">
+    <div class="row">
+        <div class="col-xs-4 col-xs-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">注册</h3>
+                </div>
+                <div class="panel-body">
+                    <form action="" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% for field in reg_form %}
+                        <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                        {{ field }}
+                        <p class="text-danger">{{ field.errors.as_text }}</p>
+                        {% endfor %}
+                        <span class="pull-left text-danger">{{ reg_form.non_field_errors }}</span>
+                        <div class="form-group">
+                            <label for="avatar" class="control-label">头像(默认)</label>
+                            <div class="avatar-put">
+                                <label for="avatar"><img src="/media/media/default.png" alt="" width="60" height="60" id="avatar_img"></label>
+                                <input type="file" style="display: none;" id="avatar" name="avatar">
+                            </div>
+                        </div>
+                        <input type="submit" value="注册" class="btn btn-primary pull-right">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    // 头像预览
+    $("#avatar").change(function () {
+        var choose_file = $(this)[0].files[0];
+        // 实例化一个阅读器对象
+        var reader = new FileReader();
+        // 读取文件的路径，没有返回值,结果在reader.result里
+        reader.readAsDataURL(choose_file);
+        // 读取需要时间，读完后再修改图片路径
+        reader.onload=function () {
+            $("#avatar_img").attr("src",this.result)
+        }
+
+    });
+</script>
+</html>

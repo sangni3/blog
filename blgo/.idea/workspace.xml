@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e8fba79c-4182-4d07-a585-a524ac9ef5c0" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/PycharmProjects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../22.commentAndLogin/.idea/22.commentAndLogin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../26.回复功能设计和树结构/.idea/26.回复功能设计和树结构.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../blgo/.idea/blgo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/onw-blgo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/icon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/media/author.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/media/author_w1U2bNq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../study/.idea/study.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../study/4-9.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../until1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../until1/Blog/Blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../until1/Blog/Blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../until1/Blog/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../../until1/Blog/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../until1/Blog/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../until1/Blog/web/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../until1/Blog/web/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../until1/Blog/web/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../until1/Blog/web/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../until1/Blog/web/urls.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="20Xy8Uks03Z2G7ZKEbXwXdliNb9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../django-shop" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8fba79c-4182-4d07-a585-a524ac9ef5c0" name="默认的" comment="" />
+      <created>1636205067629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636205067629</updated>
+      <workItem from="1636205068818" duration="26740000" />
+      <workItem from="1636528662598" duration="1907000" />
+      <workItem from="1636771206348" duration="219000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1636771424287">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636771424287" />
+    <state x="270" y="56" key="SettingsEditor" timestamp="1636282771798">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1636282771798" />
+  </component>
+</project>
