@@ -85,6 +85,9 @@ nav li a,nav li a:hover{
 .comment-ct{
     margin-left: 70px;
 }
+.comment-ct p{
+    word-break:break-word
+}
 .tag{
     background: #5bc0de;
     color: white;
